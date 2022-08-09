@@ -7,16 +7,16 @@
  *	- Include Symbols 
  *	- Exclude Similar Characters (i, l, 1, L, o, 0, O)
  *	- Exclude Ambigous Charcaters ( { } [ ] ( ) / \ ' " ` ~ , ; : . < > )
- *	---don't begin with a number or symbol
- *	---don't use the same character more than once  - in version 2
- *	---don't use sequential characters, e.g. abc, 789 - in version 2
+ *	- don't begin with a number or symbol
  
- function be like: 
+ Function input: 
  strongPassword(length, [type array], options)
  length - betwen 8 - 128
  type - letters, bigLetters, numbers, symbols
  options - exclude-similar, exclude-ambigous, first-letter
- 
+ Example:
+ 	generate(8, ["symbols", "letters", "bigLetters", "numbers"],["exclude-ambigous","first-letter"]);
+Function output: string
 */
 
 // shuffle Text
