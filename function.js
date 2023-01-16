@@ -69,8 +69,8 @@ const generate = ( (maxSize, type, options) => {
 //generate(8, ["symbols", "letters", "bigLetters", "numbers"],["exclude-ambigous"]);
 
 for(let i=1; i<=8; i++){
-	var pass = generate(8, ["symbols", "letters", "bigLetters", "numbers"],["exclude-ambigous","first-letter"]);
-	console.log(pass.length);
+	var pass = generate(16, ["symbols", "letters", "bigLetters", "numbers"],["exclude-ambigous","first-letter"]);
+	console.log(pass);
 }
 
 
